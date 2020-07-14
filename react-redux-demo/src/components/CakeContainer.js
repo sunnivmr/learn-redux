@@ -12,7 +12,7 @@ function CakeContainer(props) {
 }
 
 // Gets the redux state as the parameter and returns an object
-// The object creates the prop numOfCakes which is mapped to the redux state
+// The object creates the prop numOfCakes which is mapped to the redux state numOfCakes
 const mapStateToProps = (state) => {
   return {
     numOfCakes: state.numOfCakes,
@@ -20,7 +20,7 @@ const mapStateToProps = (state) => {
 };
 
 // Gets the redux dispatch method as the parameter and returns an object
-// The object creates the function buyCake which is mapped to the redux dispatch method
+// The object creates the function buyCake which is mapped to the redux dispatch method buyCake()
 const mapDispatchToProps = (dispatch) => {
   return {
     buyCake: () => dispatch(buyCake()),
