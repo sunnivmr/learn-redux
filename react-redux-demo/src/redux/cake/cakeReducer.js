@@ -1,4 +1,3 @@
-const { BUY_CAKE } = require("./cakeTypes");
 import { BUY_CAKE } from "./cakeTypes";
 
 const initialState = {
