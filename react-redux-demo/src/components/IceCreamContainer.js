@@ -1,12 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
-import { buyCake } from "../redux";
+import { buyIceCream } from "../redux";
 
-function CakeContainer(props) {
+function IceCreamContainer(props) {
   return (
     <div>
-      <h2>Number of cakes: {props.numOfCakes}</h2>
-      <button onClick={props.buyCake}>Buy cake</button>
+      <h2>Number of ice creams: {props.numOfIceCreams}</h2>
+      <button onClick={props.buyIceCream}>Buy cake</button>
     </div>
   );
 }
@@ -15,7 +15,7 @@ function CakeContainer(props) {
 // The object creates the prop numOfCakes which is mapped to the redux state numOfCakes
 const mapStateToProps = (state) => {
   return {
-    numOfCakes: state.cake.numOfCakes,
+    numOfIceCreams: state.iceCream.numOfIceCreams,
   };
 };
 
@@ -23,8 +23,8 @@ const mapStateToProps = (state) => {
 // The object creates the function buyCake which is mapped to the redux dispatch method buyCake()
 const mapDispatchToProps = (dispatch) => {
   return {
-    buyCake: () => dispatch(buyCake()),
+    buyIceCream: () => dispatch(buyIceCream()),
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(IceCreamContainer);
