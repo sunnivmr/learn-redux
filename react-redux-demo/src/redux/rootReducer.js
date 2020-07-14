@@ -5,6 +5,7 @@ import iceCreamReducer from "./iceCream/iceCreamReducer";
 const rootReducer = combineReducers({
   cake: cakeReducer,
   iceCream: iceCreamReducer,
+  // cookie: cookieReducer
 });
 
 export default rootReducer;
