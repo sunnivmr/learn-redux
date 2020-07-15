@@ -10,7 +10,7 @@ const cakeReducer = (state = initialState, action) => {
     case BUY_CAKE:
       return {
         ...state, // Makes a copy of the object
-        numOfCakes: state.numOfCakes - 1, // Changes only the chosen parameter
+        numOfCakes: state.numOfCakes - action.payload, // Changes only the chosen parameter
       };
 
     default:

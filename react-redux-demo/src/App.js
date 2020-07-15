@@ -11,13 +11,14 @@ import IceCreamContainer from "./components/IceCreamContainer";
 import HooksCookieContainer from "./components/HooksCookieContainer";
 import CookieContainer from "./components/CookieContainer";
 import HooksIceCreamContainer from "./components/HooksIceCreamContainer";
+import NewCakeContainer from "./components/NewCakeContainer";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <h1>Cake shop</h1>
-        <HooksCakeContainer />
+        <NewCakeContainer />
         <HooksCookieContainer />
         <HooksIceCreamContainer />
       </div>
